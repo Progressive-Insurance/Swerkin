@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
   Library to facilitate UI testing utilizing KIF.  It is to be shared across apps and contains the base components for building basic UI tests.  It uses the screen object model design as well as the XCTest framework to create UI tests that are quick and easy to setup.
                        DESC
 
-  s.homepage         = 'https://progcloud.visualstudio.com/MN/_git/Swerkin'
+  s.homepage         = 'https://github.com/Progressive-Insurance/Swerkin'
   
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = {  }
-  s.source           = { :git => 'https://progcloud.visualstudio.com/MN/_git/Swerkin.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Progressive-Insurance/Swerkin.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.0'
   s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
