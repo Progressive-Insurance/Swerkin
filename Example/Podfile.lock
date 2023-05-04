@@ -1,0 +1,49 @@
+PODS:
+  - iOSSnapshotTestCase (6.2.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.2.0)
+  - iOSSnapshotTestCase/Core (6.2.0)
+  - iOSSnapshotTestCase/SwiftSupport (6.2.0):
+    - iOSSnapshotTestCase/Core
+  - KIF (3.8.7):
+    - KIF/Core (= 3.8.7)
+  - KIF/Core (3.8.7)
+  - KIF/IdentifierTests (3.8.7):
+    - KIF/Core
+  - Nimble (9.2.1)
+  - Nimble-Snapshots (8.3.0):
+    - Nimble-Snapshots/Core (= 8.3.0)
+  - Nimble-Snapshots/Core (8.3.0):
+    - iOSSnapshotTestCase (~> 6.0)
+    - Nimble
+  - Swerkin (0.0.1):
+    - KIF
+    - KIF/IdentifierTests
+
+DEPENDENCIES:
+  - KIF (= 3.8.7)
+  - KIF/IdentifierTests (= 3.8.7)
+  - Nimble (~> 9.2.1)
+  - Nimble-Snapshots (~> 8.0)
+  - Swerkin (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - iOSSnapshotTestCase
+    - KIF
+    - Nimble
+    - Nimble-Snapshots
+
+EXTERNAL SOURCES:
+  Swerkin:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  iOSSnapshotTestCase: 9ab44cb5aa62b84d31847f40680112e15ec579a6
+  KIF: 779cdbca106633b94ecee7b036537490ebdbd9de
+  Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
+  Nimble-Snapshots: e4a2f67f05e3a22f71fb9d89801af93eb91df6de
+  Swerkin: 77b1b0a62796f11930d3925ad2a41ade5dfc314d
+
+PODFILE CHECKSUM: 7d74d8bbd439ef78be59aa3d435ff04712a1764c
+
+COCOAPODS: 1.12.0

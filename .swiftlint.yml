@@ -1,0 +1,19 @@
+included:
+- Sources/Swerkin
+disabled_rules:
+- force_unwrapping
+- force_cast
+- identifier_name
+- function_parameter_count
+- line_length
+- unused_optional_binding
+- implicit_getter
+- todo
+opt_in_rules:
+- empty_count
+- empty_string
+excluded:
+- Example/Pods/Nimble
+- Example/Pods/Nimble-Snapshots
+- Example/Pods/KIF
+- Example/Pods/iOSSnapshotTestCase

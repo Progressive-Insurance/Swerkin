@@ -1,0 +1,6 @@
+framework module Swerkin {
+  umbrella header "Swerkin-umbrella.h"
+
+  export *
+  module * { export * }
+}

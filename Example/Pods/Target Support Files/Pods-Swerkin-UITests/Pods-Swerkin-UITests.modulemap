@@ -1,0 +1,6 @@
+framework module Pods_Swerkin_UITests {
+  umbrella header "Pods-Swerkin-UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
