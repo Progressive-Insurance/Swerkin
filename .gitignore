@@ -22,10 +22,11 @@ DerivedData
 *.ipa
 swiftlint.result.html
 
-
 #git
 *.orig
 */.idea
 .idea
 # CocoaPods
-Pods/Target Support Files
+Example/Pods
+
+

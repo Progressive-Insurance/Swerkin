@@ -16,6 +16,7 @@ class TappableViewController: UIViewController, UIPopoverPresentationControllerD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.white
         
         switchOne.addTarget(self, action: #selector(onSwitchValueChanged), for: .valueChanged)
         switchTwo.addTarget(self, action: #selector(onSwitch2ValueChanged), for: .valueChanged)

@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/Progressive-Insurance/Swerkin'
   
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = {  }
+  s.author           = { 'Progressive Open Source' => 'progressiveopensource@users.noreply.github.com' }
   s.source           = { :git => 'https://github.com/Progressive-Insurance/Swerkin.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.0'

@@ -23,6 +23,7 @@ class SwipeController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.white
         slides = createSlides()
         setupSlideScrollView(slides: slides)
         

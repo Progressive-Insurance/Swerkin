@@ -25,6 +25,7 @@ class DropDownViewController: UIViewController, UIPickerViewDataSource, UIPicker
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.white
         self.navigationItem.hidesBackButton = true
         self.title = "Dropdown Testing"
         addDoneButtonKeyboard(pickerView: pickerView, textField: self.textBox , action: #selector(doneButtonPressed), actionCancel: #selector(cancelButtonPressed))

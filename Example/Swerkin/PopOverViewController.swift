@@ -10,6 +10,7 @@ import UIKit
 class PopOverViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.white
         self.preferredContentSize = CGSize(width: 320, height: 200)
             //sets the arrow of the popover to same color of background
         self.popoverPresentationController?.backgroundColor = self.view.backgroundColor

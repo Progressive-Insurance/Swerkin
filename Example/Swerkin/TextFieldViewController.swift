@@ -24,6 +24,7 @@ class TextFieldViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.white
         firstNameTextField.delegate = self
         lastNameTextField.delegate = self
         infoTextView.delegate = self
