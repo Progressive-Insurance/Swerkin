@@ -1,0 +1,134 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+opt_out_usage
+skip_docs
+ENV["FASTLANE_SKIP_UPDATE_CHECK"] = "1"
+ENV["FASTLANE_HIDE_GITHUB_ISSUES"] = "1"
+ENV["FASTLANE_HIDE_CHANGELOG"] = "1"
+
+ENV["SCAN_OUTPUT_DIRECTORY"] = "fastlane/test_output"
+ENV["SCAN_DERIVED_DATA_PATH"] = "build/derived_data"
+ENV["SCAN_DISABLE_CONCURRENT_TESTING"] = "true"
+ENV["SCAN_MAX_CONCURRENT_SIMULATORS"] = "1"
+
+is_teambuild = false
+if ENV["TEAMBUILD"].nil? || ENV["TEAMBUILD"]&.empty?
+  ENV["TEAMBUILD"] = "0"
+  STDOUT.puts "Is Local Build"
+else
+  STDOUT.puts "Is CI BUILD"
+  ENV["FASTLANE_HIDE_CHANGELOG"] = "1"
+  is_teambuild = true
+end
+
+installed_xcodes = Dir.glob("/Applications/Xcode*.app")
+
+xcversion = ENV["XCODE_VERSION"] ||= "14.2"
+xcversion = installed_xcodes.map { |v| v.gsub(/\.\/Xcode_?/, '').gsub(/(_beta)?\.app/, '')}.reject(&:empty?).uniq.sort.last if xcversion == "latest"
+
+requested_xcode = installed_xcodes.filter { |v| v.include?("#{xcversion}.app") || v.include?("#{xcversion}_beta.app")  }.sort.first || "/Applications/Xcode_#{xcversion}.app"
+
+if (installed_xcodes.empty? || !installed_xcodes.include?(requested_xcode))
+  puts "Could not find the Xcode App for version specificed -> #{xcversion}"
+  if (installed_xcodes.empty?)
+    puts "No Xcode Installation found"
+  else 
+    xcode_pretty_print = installed_xcodes.map { |x| x.split("/").last }.join(", ")
+    puts "Xcode Versions installed on this machine are #{xcode_pretty_print}"
+  end
+  if is_ci
+    puts "Please submit an SRM Request to have this machine updated or reconfigured"
+  else
+    puts "Please update your local machine's xcode to match the same location and spelling as #{requested_xcode}"
+  end
+end
+
+simulator = "iPhone 14 Pro"
+
+# Select Xcode Defined in ENV or Fastfile
+xcode_select requested_xcode
+
+default_platform(:ios)
+
+platform :ios do
+  lane :ui_test do
+    scan(
+      scheme: "Swerkin-UITests",
+      only_testing: "Swerkin-UITests",
+      test_without_building: true,
+      configuration: "Debug",
+      sdk: "iphonesimulator",
+      workspace: "Swerkin.xcworkspace",
+      devices: [simulator],
+      output_types: "junit,html",
+      output_files: "swerkin_app.junit",
+      buildlog_path: "./fastlane/test_output"
+    )
+  end
+
+  lane :unit_test do
+  scan(
+      workspace: "Swerkin.xcworkspace",
+      scheme: "Swerkin-UnitTests",
+      only_testing: "Swerkin-UnitTests",
+      test_without_building: true,
+      devices: [simulator],
+      output_types: "junit",
+      output_files: "swerkin_app.junit",
+      result_bundle: true,
+      buildlog_path: "./fastlane/test_output"
+  )
+  end
+
+  lane :build_for_testing do
+    scan(
+      clean: true,
+      build_for_testing: true,
+      output_directory: "./build",
+      scheme: "Swerkin_Example",
+      configuration: "Debug",
+      sdk: "iphonesimulator",
+      workspace: "Swerkin.xcworkspace",
+      devices: [simulator]
+    )
+  end
+
+  desc "Release a new version with a patch bump_type"
+  lane :patch do
+    release("patch") 
+  end
+
+  desc "Release a new version with a minor bump_type"
+  lane :minor do
+    release("minor")
+  end
+
+  desc "Release a new version with a major bump_type"
+  lane :major do
+    release("major")
+  end
+
+  def release(type)
+    podspec_path = "./../Swerkin.podspec"
+    version = version_bump_podspec(path: podspec_path,
+                                  bump_type: type)
+    git_add(path: podspec_path)
+    git_commit(path: [podspec_path],
+              message: "#{version} release")
+    add_git_tag(tag: "#{version}")
+    push_to_git_remote
+  end
+end

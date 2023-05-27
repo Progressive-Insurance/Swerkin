@@ -1,0 +1,46 @@
+# This workflow will build a Swift project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
+
+name: Swerkin
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Install Bundler
+      run: gem install bundler
+       
+    - name: Install gems
+      run: bundle install
+   
+    - name: Show Build SDK
+      run: xcodebuild -showsdks
+    
+    - name: Install Dependencies
+      working-directory: Example
+      run: pod install --repo-update
+   
+    - name: Show Build Workspace
+      working-directory: Example
+      run: xcodebuild -list -workspace Swerkin.xcworkspace
+      
+    - name: Run fastlane build for testing
+      working-directory: Example
+      run: bundle exec fastlane build_for_testing
+      
+    - name: Run fastlane unit tests
+      working-directory: Example
+      run: bundle exec fastlane unit_test
+    
+    - name: Run fastlane UI tests
+      working-directory: Example
+      run: bundle exec fastlane ui_test

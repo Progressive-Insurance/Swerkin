@@ -21,6 +21,8 @@ DerivedData
 *.hmap
 *.ipa
 swiftlint.result.html
+Example/fastlane/test_output/
+Example/fastlane/report.xml
 
 #git
 *.orig
