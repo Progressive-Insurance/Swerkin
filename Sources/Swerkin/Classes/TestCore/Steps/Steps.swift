@@ -113,8 +113,8 @@ extension XCTestCase {
         view.layoutIfNeeded()
 
         let bounds = view.bounds
-        assert(bounds.width != nil, "Zero width for view \(view)")
-        assert(bounds.height != nil, "Zero height for view \(view)")
+        assert(bounds.width != 0, "Zero width for view \(view)")
+        assert(bounds.height != 0, "Zero height for view \(view)")
 
         let graphicsImageRenderer = UIGraphicsImageRenderer(size: bounds.size)
         return graphicsImageRenderer.image(actions: { _ in
