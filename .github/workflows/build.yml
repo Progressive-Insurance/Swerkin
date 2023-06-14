@@ -44,3 +44,9 @@ jobs:
     - name: Run fastlane UI tests
       working-directory: Example
       run: bundle exec fastlane ui_test
+      
+    - name: Uploading Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: tests Artifacts
+        path: ./Example/artifact
