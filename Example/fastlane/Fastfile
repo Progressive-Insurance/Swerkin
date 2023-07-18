@@ -36,7 +36,7 @@ end
 
 installed_xcodes = Dir.glob("/Applications/Xcode*.app")
 
-xcversion = ENV["XCODE_VERSION"] ||= "14.2"
+xcversion = ENV["XCODE_VERSION"] ||= "14.3.1"
 xcversion = installed_xcodes.map { |v| v.gsub(/\.\/Xcode_?/, '').gsub(/(_beta)?\.app/, '')}.reject(&:empty?).uniq.sort.last if xcversion == "latest"
 
 requested_xcode = installed_xcodes.filter { |v| v.include?("#{xcversion}.app") || v.include?("#{xcversion}_beta.app")  }.sort.first || "/Applications/Xcode_#{xcversion}.app"
