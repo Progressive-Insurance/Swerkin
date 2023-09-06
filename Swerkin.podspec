@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Swerkin'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Library that contains the core components for UI Testing with KIF and Gherkin'
 
 # This description is used to generate tags and improve search results.

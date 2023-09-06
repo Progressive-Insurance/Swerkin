@@ -5,6 +5,8 @@
  All Rights Reserved.Use of this source code is governed by an MIT license that can be found in the LICENSE file at https://github.com/Progressive/Swerkin/LICENSE.md
  */
 
+import XCTest
+
 /// Swerkin step types of Given, When, Then, And
 ///
 /// Use these step types to qualify the steps within the test case for a Gherkin-like experience
