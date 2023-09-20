@@ -5,6 +5,10 @@
  All Rights Reserved.Use of this source code is governed by an MIT license that can be found in the LICENSE file at https://github.com/Progressive/Swerkin/LICENSE.md
  */
 
+import CoreFoundation
+import CoreGraphics
+import XCTest
+
 extension Steps {
 
     /// Touch element with given accessibility label
