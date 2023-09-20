@@ -15,6 +15,8 @@
 ///   - step: One or more step definitions that when executed will drive the user from the start screen to end screen
 ///   - preconditions: List of preconditions that need to be satisified to use this path segment
 
+import XCTest
+
 public struct PathSegment {
     public var start: PresentableScreen
     public var end: PresentableScreen
