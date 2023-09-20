@@ -5,6 +5,8 @@
  All Rights Reserved.Use of this source code is governed by an MIT license that can be found in the LICENSE file at https://github.com/Progressive/Swerkin/LICENSE.md
  */
 
+import UIKit
+
 public extension Viewable where Self: Screen {
     func element(withIdentifier identifier: String) -> UIView? {
         return self.viewTester.view(withIdentifier: identifier)
