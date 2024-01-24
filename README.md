@@ -14,7 +14,7 @@ Swerkin is an instrumentation testing framework with 5 main objectives:
 
 3. Provide a catalog of predefined step definitions and a pattern to write new step definitions in Swift.
 
-   The ability to create test scenarios should be easy for developers and non-developers but should provide a familiar experience for developers; which includes using intellisense to finds the steps, writing the test scenarios in Swift, and the ability to debug the steps within XCode.
+   The ability to create test scenarios should be easy for developers and non-developers but should provide a familiar experience for developers; which includes using auto-complete to find the steps, writing the test scenarios in Swift, and the ability to debug the steps within XCode.
 
 4. Ability to test individual screens without having to navigate through entire application.
 
