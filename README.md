@@ -26,11 +26,11 @@ Swerkin is an instrumentation testing framework with 5 main objectives:
 
 ## How to Contribute
 
-Please see the [Contributing file](https://github.com/Progressive/Swerkin/CONTRIBUTING.md) on how to contribute to this framework.
+Please see the [Contributing file](https://github.com/Progressive-Insurance/Swerkin/blob/main/CONTRIBUTING.md) on how to contribute to this framework.
 
 ## License
 
-Swerkin is available under the MIT license. See the [LICENSE file](https://github.com/Progressive/Swerkin/LICENSE.md) for more info.
+Swerkin is available under the MIT license. See the [LICENSE file](https://github.com/Progressive-Insurance/Swerkin/blob/main/LICENSE.md) for more info.
 
 
 # Swerkin Functionality

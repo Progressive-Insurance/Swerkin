@@ -61,7 +61,7 @@
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = "Swerkin_Example";
+			remoteInfo = Swerkin_Example;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -93,6 +93,7 @@
 		727175CD277A15D200D017CF /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		727175CF277A15DB00D017CF /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		727175D6277CE3ED00D017CF /* DropdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownViewController.swift; sourceTree = "<group>"; };
+		729AE9FB2D306D5800299A68 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = SOURCE_ROOT; };
 		72D68AE0299FC87C00611384 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		72D68AE2299FCAEE00611384 /* TableViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewScreen.swift; sourceTree = "<group>"; };
 		72D68AE5299FCCC100611384 /* TableViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSpec.swift; sourceTree = "<group>"; };
@@ -104,7 +105,6 @@
 		BAE6510D3E67D5B9C335D4E5 /* Pods-Swerkin-UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swerkin-UITests.debug.xcconfig"; path = "Target Support Files/Pods-Swerkin-UITests/Pods-Swerkin-UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BE6903AC37F217FC9A9CF7B6 /* Pods-Swerkin-UnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swerkin-UnitTests.release.xcconfig"; path = "Target Support Files/Pods-Swerkin-UnitTests/Pods-Swerkin-UnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		CF3680A5E93CB4E567FFE176 /* Pods_Swerkin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swerkin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6AC9D07731812A1AB52A3CA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DAA19B2297627404B62A8787 /* Pods-Swerkin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swerkin_Example.release.xcconfig"; path = "Target Support Files/Pods-Swerkin_Example/Pods-Swerkin_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EB4F685F24F9787100C1F4D6 /* Swerkin-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swerkin-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4F686124F9787100C1F4D6 /* TestTagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTagTests.swift; sourceTree = "<group>"; };
@@ -251,9 +251,9 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				729AE9FB2D306D5800299A68 /* LICENSE.md */,
 				1B09622D86034A7D7AC519DD /* Swerkin.podspec */,
 				28E85B6C88EDD7DFF231BA9C /* README.md */,
-				D6AC9D07731812A1AB52A3CA /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -535,18 +535,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Swerkin-UnitTests/Pods-Swerkin-UnitTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KIF/KIF.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
 				"${BUILT_PRODUCTS_DIR}/Swerkin/Swerkin.framework",
-				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swerkin.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

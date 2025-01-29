@@ -10,10 +10,12 @@ import UIKit
 class ButtonViewController: UIViewController {
     
     @IBOutlet var buttonClickedLabel: UILabel!
+    @IBOutlet var disableButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
+        self.disableButton.isEnabled = false
         // Do any additional setup after loading the view, typically from a nib.
     }
     

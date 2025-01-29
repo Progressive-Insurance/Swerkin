@@ -8,8 +8,6 @@ target 'Swerkin_Example' do
     inhibit_all_warnings!
 
     pod 'Swerkin', :path => '../'
-    pod 'Nimble', '~> 9.2.1'
-    pod 'Nimble-Snapshots' , '~> 8.0'
   end
   
   target 'Swerkin-UITests' do
@@ -17,8 +15,9 @@ target 'Swerkin_Example' do
     inhibit_all_warnings!
 
     pod 'Swerkin', :path => '../'
-    pod "KIF", "3.8.7"
-    pod "KIF/IdentifierTests", "3.8.7"
+    pod 'KIF', "3.9.0"
+    pod 'KIF/IdentifierTests', "3.9.0"
+
   end
 end
 
