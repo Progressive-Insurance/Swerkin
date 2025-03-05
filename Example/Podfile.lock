@@ -1,16 +1,16 @@
 PODS:
-  - KIF (3.9.0):
-    - KIF/Core (= 3.9.0)
-  - KIF/Core (3.9.0)
-  - KIF/IdentifierTests (3.9.0):
+  - KIF (3.11.2):
+    - KIF/Core (= 3.11.2)
+  - KIF/Core (3.11.2)
+  - KIF/IdentifierTests (3.11.2):
     - KIF/Core
   - Swerkin (0.0.3):
     - KIF
     - KIF/IdentifierTests
 
 DEPENDENCIES:
-  - KIF (= 3.9.0)
-  - KIF/IdentifierTests (= 3.9.0)
+  - KIF (= 3.11.2)
+  - KIF/IdentifierTests (= 3.11.2)
   - Swerkin (from `../`)
 
 SPEC REPOS:
@@ -22,9 +22,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KIF: 2bd28f6c15e5b448d578668586acc8c3fe603f06
+  KIF: 0f1fe3676f196dc529f5aa0130013607003357ba
   Swerkin: 603131bf54216212b7f8b2b3ff18300a96c7c952
 
-PODFILE CHECKSUM: 61483d593620ab6ef8b51854f06763daf25b59ac
+PODFILE CHECKSUM: 41d13c810b9d187620c86737ae6dd11c51e24673
 
 COCOAPODS: 1.16.2
