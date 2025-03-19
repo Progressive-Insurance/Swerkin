@@ -128,6 +128,7 @@ extension Steps {
         self.performStep([text, id]) {
             self.enterText(into: id, withText: text, file: file, line: line)
             self.ITouchButtonBarButton(withLabel: buttonText)
+            self.waitForAbsenceOfSoftwareKeyboard()
         }
     }
 
