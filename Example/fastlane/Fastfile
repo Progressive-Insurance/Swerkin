@@ -36,7 +36,7 @@ end
 
 installed_xcodes = Dir.glob("/Applications/Xcode*.app")
 
-xcversion = ENV["XCODE_VERSION"] ||= "14.3.1"
+xcversion = ENV["XCODE_VERSION"] ||= "16.4"
 xcversion = installed_xcodes.map { |v| v.gsub(/\.\/Xcode_?/, '').gsub(/(_beta)?\.app/, '')}.reject(&:empty?).uniq.sort.last if xcversion == "latest"
 
 requested_xcode = installed_xcodes.filter { |v| v.include?("#{xcversion}.app") || v.include?("#{xcversion}_beta.app")  }.sort.first || "/Applications/Xcode_#{xcversion}.app"
@@ -56,7 +56,7 @@ if (installed_xcodes.empty? || !installed_xcodes.include?(requested_xcode))
   end
 end
 
-simulator = "iPhone 14 Pro (16.4)"
+simulator = "iPhone 16 Pro (18.5)"
 
 # Select Xcode Defined in ENV or Fastfile
 xcode_select requested_xcode

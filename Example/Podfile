@@ -15,8 +15,8 @@ target 'Swerkin_Example' do
     inhibit_all_warnings!
 
     pod 'Swerkin', :path => '../'
-    pod 'KIF', "3.11.3"
-    pod 'KIF/IdentifierTests', "3.11.3"
+    pod 'KIF', "3.12.3"
+    pod 'KIF/IdentifierTests', "3.12.3"
 
   end
 end
