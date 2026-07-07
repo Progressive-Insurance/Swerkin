@@ -11,6 +11,7 @@ public protocol PresentableScreen {
 }
 
 /// Protocol for `ScreenProvider` modules
+@MainActor
 public protocol ScreenProviderObject {
     /// (required) Returns the concrete instance of the `Screen` for presentation
     func screen(for: PresentableScreen) -> Screen?
@@ -19,6 +20,7 @@ public protocol ScreenProviderObject {
 }
 
 /// Screen provider for a given set of presentable screens
+@MainActor
 open class ScreenProvider<T>: ScreenProviderObject where T: PresentableScreen {
     public typealias CompareFunction = (Screen, AnyObject.Type) -> Bool
 

@@ -7,6 +7,7 @@
 
 import Swerkin
 
+@MainActor
 public class ExampleScreenProvider: ScreenProvider<ExamplePresentableScreen> {
     public var testReference: BaseTestCase! = nil
 

@@ -13,6 +13,7 @@ extension Steps {
     /// Wait for trait defined by the given screen object displays otherwise fail step
     /// - Parameters:
     ///   - screen: PresentableScreen
+    @MainActor
     public func IWaitToSeeScreen(_ screen: PresentableScreen, file: StaticString = #file, line: UInt = #line) {
         self.performStep([screen.rawValue]) {
             self.viewTester.waitForAnimationsToFinish()

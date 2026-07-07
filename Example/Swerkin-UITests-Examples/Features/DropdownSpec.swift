@@ -7,7 +7,7 @@
 
 import Swerkin
 
-class Dropdown: ExampleTestCase {
+class Dropdown: ExampleTestCase, @unchecked Sendable {
     private let textField = DropdownScreen.View.textField.accessibilityIdentifier
     
     func testVerifySingleItem() {

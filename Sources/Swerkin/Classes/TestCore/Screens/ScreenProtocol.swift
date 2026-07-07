@@ -8,6 +8,7 @@
 import KIF
 
 /// Protocol for `Screen` objects
+@MainActor
 public protocol Screen: Viewable, Assertable, Touchable, Renderable, Navigable {
     var test: BaseTestCase { get set }
     init(testCase: BaseTestCase)
@@ -21,6 +22,7 @@ public extension Screen {
 }
 
 /// Protocol for `Renderable` objects
+@MainActor
 public protocol Renderable {
     var trait: String { get }
     var name: String { get }
@@ -28,6 +30,7 @@ public protocol Renderable {
 }
 
 /// Protocol for `Navigable` objects
+@MainActor
 public protocol Navigable {
     func entryPathSegments() -> [PathSegment]
 }

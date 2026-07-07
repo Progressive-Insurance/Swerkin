@@ -7,7 +7,7 @@
 
 import Swerkin
 
-class EndToEndSpec: ExampleTestCase {
+class EndToEndSpec: ExampleTestCase, @unchecked Sendable {
 
     private let startButton = EndToEndScreen.View.startTestButton.accessibilityIdentifier
 

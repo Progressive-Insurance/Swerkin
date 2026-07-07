@@ -9,7 +9,10 @@ import UIKit
 
 public extension UIApplication {
     func rootNavigationController() -> UINavigationController? {
-        guard let keyWindow = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else {
+        guard let keyWindow = UIApplication.shared.connectedScenes
+            .compactMap ({ $0 as? UIWindowScene })
+            .flatMap ({ $0.windows })
+            .first (where: { $0.isKeyWindow }) else {
             return nil
         }
         return keyWindow.rootViewController as? UINavigationController

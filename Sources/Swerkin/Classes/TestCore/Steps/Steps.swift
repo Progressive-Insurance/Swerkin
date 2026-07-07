@@ -69,6 +69,7 @@ public class Steps: NSObject, XCTestObservation {
     /// - Parameters:
     ///   - fromScreen: Screen on which the execution path starts
     ///   - toScreen: Screen on which the excution the path ends
+    @MainActor
     public func executeSteps(from fromScreen: PresentableScreen, to toScreen: PresentableScreen) {
         let path = StepNavigator().findPathToScreen(
             from: fromScreen,
