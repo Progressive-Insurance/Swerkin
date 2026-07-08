@@ -56,7 +56,7 @@ if (installed_xcodes.empty? || !installed_xcodes.include?(requested_xcode))
   end
 end
 
-simulator = "iPhone 16 Pro (18.5)"
+simulator = "iPhone 17 Pro"
 
 # Select Xcode Defined in ENV or Fastfile
 xcode_select requested_xcode
