@@ -7,6 +7,7 @@
 
 import XCTest
 
+@MainActor
 extension Steps {
 
     /// Sets the current screen in the test case to a given presentable screen

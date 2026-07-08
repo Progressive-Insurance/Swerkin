@@ -6,6 +6,7 @@
  */
 import XCTest
 
+@MainActor
 extension Steps {
 
     /// Touch table cell row with a given id

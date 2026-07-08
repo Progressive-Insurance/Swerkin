@@ -8,6 +8,7 @@
 import CoreFoundation
 import CoreGraphics
 
+@MainActor
 extension Steps {
 
     /// Touch text box with a given accessibility identifier

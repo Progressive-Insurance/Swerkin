@@ -6,6 +6,7 @@
  */
 import XCTest
 
+@MainActor
 extension Steps {
 
     /// Verify table cell row with a given accessibility id appears on the screen

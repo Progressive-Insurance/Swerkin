@@ -8,6 +8,7 @@
 import XCTest
 import UIKit
 
+@MainActor
 extension Steps {
 
     /// Wait for trait defined by the given screen object displays otherwise fail step

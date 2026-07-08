@@ -22,6 +22,7 @@ import XCTest
  * default timeout for waiting
  * default timeout before failing validations
  */
+@MainActor
 open class BaseTestCase: KIFTestCase {
 
     open class var tags: [TestTag] { return [.all] }

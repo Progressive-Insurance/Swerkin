@@ -6,6 +6,7 @@
  */
 import XCTest
 
+@MainActor
 extension Steps {
 
     /// Verifies a UIButton exists with the given accessibility ID

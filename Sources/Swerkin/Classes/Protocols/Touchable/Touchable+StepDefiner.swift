@@ -7,7 +7,7 @@
 
 import KIF
 
-
+@MainActor
 extension Steps: Touchable {
 
     public func touchView(withIdentifier id: String? = nil, withLabel label: String? = nil,
