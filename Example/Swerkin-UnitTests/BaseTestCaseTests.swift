@@ -8,6 +8,7 @@
 import XCTest
 import Swerkin
 
+@MainActor
 class BaseTestCaseTests: XCTestCase {
 
     let baseTestCase = BaseTestCase()
