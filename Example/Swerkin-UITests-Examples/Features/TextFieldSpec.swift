@@ -7,7 +7,7 @@
 
 import Swerkin
 
-class TextFieldSpec: ExampleTestCase, @unchecked Sendable {
+class TextFieldSpec: ExampleTestCase {
     
     private let firstNameTextField = TextFieldScreen.View.firstNameTextField.accessibilityIdentifier
     private let lastTextField = TextFieldScreen.View.lastNameTextField.accessibilityIdentifier

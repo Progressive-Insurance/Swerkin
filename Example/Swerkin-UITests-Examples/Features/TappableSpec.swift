@@ -7,7 +7,7 @@
 
 import Swerkin
 
-class TappableSpec: ExampleTestCase, @unchecked Sendable {
+class TappableSpec: ExampleTestCase {
     
     private let checkBox = TappableScreen.View.checkBox.accessibilityIdentifier
     private let toggleSwitch = TappableScreen.View.toggleSwitch.accessibilityIdentifier

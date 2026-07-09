@@ -11,7 +11,7 @@ import Swerkin
 import Swerkin_Example
 
 @MainActor
-open class ExampleTestCase: BaseTestCase, @unchecked Sendable {
+open class ExampleTestCase: BaseTestCase {
 
     open override func setUp() {
         super.setUp()

@@ -7,7 +7,7 @@
 
 import Swerkin
 
-class TableViewSpec: ExampleTestCase, @unchecked Sendable {
+class TableViewSpec: ExampleTestCase {
     
     private let headerLabel = TableViewScreen.View.headerLabel.accessibilityIdentifier
     private let firstCell = TableViewScreen.View.firstCell.accessibilityIdentifier

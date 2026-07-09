@@ -7,7 +7,7 @@
 
 import Swerkin
 
-class ButtonSpec: ExampleTestCase, @unchecked Sendable {
+class ButtonSpec: ExampleTestCase {
     
     private let enableButton = ButtonScreen.View.enableButton.accessibilityIdentifier
     private let disableButton = ButtonScreen.View.disableButton.accessibilityIdentifier

@@ -7,7 +7,7 @@
 
 import Swerkin
 
-class WaitToSeeSpec: ExampleTestCase, @unchecked Sendable {
+class WaitToSeeSpec: ExampleTestCase {
 
     private let alert = WaitToSeeScreen.View.alert.accessibilityIdentifier
     private let alertButton = WaitToSeeScreen.View.alertButton.accessibilityIdentifier

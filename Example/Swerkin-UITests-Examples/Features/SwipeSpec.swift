@@ -7,7 +7,7 @@
  
 import Swerkin
 
-class SwipeSpec: ExampleTestCase, @unchecked Sendable {
+class SwipeSpec: ExampleTestCase {
     
     private let scrollView = SwipeScreen.View.scrollView.accessibilityIdentifier
     

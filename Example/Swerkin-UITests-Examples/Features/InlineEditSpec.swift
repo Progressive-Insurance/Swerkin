@@ -7,7 +7,7 @@
 
 import Swerkin
 
-class InlineEditSpec: ExampleTestCase, @unchecked Sendable {
+class InlineEditSpec: ExampleTestCase {
     private let firstNameTextField = TextFieldScreen.View.firstNameTextField.accessibilityIdentifier
     private let lastTextField = TextFieldScreen.View.lastNameTextField.accessibilityIdentifier
     private let infotextView = TextFieldScreen.View.infoTextView.accessibilityIdentifier
