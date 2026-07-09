@@ -9,6 +9,7 @@ import CoreFoundation
 import CoreGraphics
 import XCTest
 
+@MainActor
 extension Steps {
 
     /// Touch element with given accessibility label

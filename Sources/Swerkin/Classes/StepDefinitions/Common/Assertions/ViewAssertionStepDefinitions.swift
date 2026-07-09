@@ -8,6 +8,7 @@
 import UIKit
 import XCTest
 
+@MainActor
 extension Steps {
 
     /// Verify element with given accessibility identifier exists

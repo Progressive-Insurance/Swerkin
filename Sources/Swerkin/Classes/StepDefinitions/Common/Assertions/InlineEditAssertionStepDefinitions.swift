@@ -6,6 +6,7 @@
  */
 import XCTest
 
+@MainActor
 extension Steps {
 
     /// Verifies an Inline Edit exists with the given accessibility ID

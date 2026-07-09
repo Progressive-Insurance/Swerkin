@@ -8,6 +8,7 @@
 import UIKit
 import XCTest
 
+@MainActor
 extension Steps: Assertable {
 
     public func elementExists(withIdentifier identifier: String) -> Bool {

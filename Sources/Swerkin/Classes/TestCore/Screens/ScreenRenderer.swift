@@ -6,6 +6,7 @@
  */
 
 /// Protocol for rendering screen objects for the system under test
+@MainActor
 public protocol ScreenRenderer {
     func screen(_ screenObject: Screen, didRenderWithAuth isAuth: Bool)
 }

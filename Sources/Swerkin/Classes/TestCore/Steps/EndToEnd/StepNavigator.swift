@@ -41,6 +41,7 @@ public struct PathSegment {
 }
 
 /// Finds and logs `best path` between two screens within the app under test
+@MainActor
 public class StepNavigator {
 
     /// FInds best path between two screens within the app under test

@@ -11,7 +11,7 @@ import Foundation
 /// Base list of TestTags to use to organize the tests suites
 ///
 /// Extend the struct in specific projects to expand the list of test tags to use
-public struct TestTag: RawRepresentable, Equatable {
+public struct TestTag: RawRepresentable, Equatable, Sendable {
     public var rawValue: String
 
     public init(rawValue: String) {

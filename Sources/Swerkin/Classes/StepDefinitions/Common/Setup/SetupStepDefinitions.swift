@@ -7,6 +7,7 @@
 
 import XCTest
 
+@MainActor
 extension Steps {
 
     /// Sets the current screen in the test case to a given presentable screen
@@ -23,6 +24,7 @@ extension Steps {
 
     /// Render a given presentable screen for the system under test
     /// - Parameter screen: PresentableScreen
+    @MainActor
     public func IRender(screen: PresentableScreen) {
         self.performStep([screen.rawValue]) {
             if let screen = self.testCase.screenPresenter.screen(screen) {
@@ -37,6 +39,7 @@ extension Steps {
     /// - Parameters:
     ///   - fromScreen: PresentableScreen on which the execution path starts
     ///   - toScreen: PresentableScreen on which the execution path ends
+    @MainActor
     public func INavigate(fromScreen: PresentableScreen, toScreen: PresentableScreen) {
         self.performStep([fromScreen.rawValue, toScreen.rawValue]) {
             self.testCase.viewTester().waitForAnimationsToFinish()

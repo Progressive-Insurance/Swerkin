@@ -51,6 +51,7 @@ open class ScreenPresenterImpl: ScreenPresenter {
     /// Screen object based on given presentable screen
     /// - Parameter screen: Presentable screen associated with screen object
     /// - Returns: Screen object
+    @MainActor
     open func screen(_ screen: PresentableScreen) -> Screen? {
         let provider = self.screenProvider(for: type(of: screen))
         return provider.screen(for: screen)

@@ -6,6 +6,7 @@
  */
 import XCTest
 
+@MainActor
 extension Steps {
 
     /// Verified element exists with given accessibility label

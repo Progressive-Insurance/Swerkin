@@ -7,6 +7,7 @@
 
 import XCTest
 
+@MainActor
 extension Steps {
 
     /// Verify UITextField exists with given accessibility idenitifier and text

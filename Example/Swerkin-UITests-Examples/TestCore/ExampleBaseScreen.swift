@@ -7,7 +7,8 @@
 
 import Swerkin
 
-class ExampleBaseScreen: Screen, Navigable {
+@MainActor
+class ExampleBaseScreen: @MainActor Screen, Navigable {
     final var test: BaseTestCase
     
     final let renderer: ScreenRenderer = ExampleScreenRenderer()
@@ -20,8 +21,8 @@ class ExampleBaseScreen: Screen, Navigable {
 
     var trait: String { return "" }
     var name: String { return "" }
-    func create() -> UIViewController { UIViewController() }
-    func renderScreen() {}
+    @MainActor func create() -> UIViewController { UIViewController() }
+    @MainActor func renderScreen() {}
     func entryPathSegments() -> [PathSegment] {
         return []
     }

@@ -10,21 +10,28 @@ import Swerkin
 @testable
 import Swerkin_Example
 
+@MainActor
 open class ExampleTestCase: BaseTestCase {
 
     open override func setUp() {
         super.setUp()
-
-        self.screenPresenter.registerScreenProvider(ExampleScreenProvider(testCase: self), for: ExamplePresentableScreen.self)
+        MainActor.assumeIsolated {
+            self.screenPresenter.registerScreenProvider(ExampleScreenProvider(testCase: self), for: ExamplePresentableScreen.self)
+        }
+        
+        
+        addTeardownBlock { @MainActor [weak self]  in
+            guard let self else { return }
+            self.cleanupNavigation()
+        }
     }
-
-    open override func tearDown() {
+    
+    @MainActor
+    private func cleanupNavigation() {
         resetNavigation {
             self.navigateHome()
             self.waitForAnimationsToFinish()
         }
-
-        super.tearDown()
     }
 
     open override class func setUp() {
@@ -35,7 +42,8 @@ open class ExampleTestCase: BaseTestCase {
         super.tearDown()
     }
 
-    private func resetNavigation(navigate: @escaping () -> Void) {
+    @MainActor
+    private func resetNavigation(navigate: @escaping @MainActor () -> Void) {
         if let alert = UIApplication.shared.topNavigationController()?.presentedViewController {
             alert.dismiss(animated: false) { navigate() }
         } else {
@@ -43,7 +51,7 @@ open class ExampleTestCase: BaseTestCase {
         }
     }
     
-    private func navigateHome() {
+    @MainActor private func navigateHome() {
         guard let rootNavController = UIApplication.shared.rootNavigationController()  else {
             fatalError("Failed to get rootViewController")
         }

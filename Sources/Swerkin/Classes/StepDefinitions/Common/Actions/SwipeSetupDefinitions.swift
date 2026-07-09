@@ -7,6 +7,7 @@
 
 import KIF
 
+@MainActor
 extension Steps {
 
     /// Swipe in the given direction

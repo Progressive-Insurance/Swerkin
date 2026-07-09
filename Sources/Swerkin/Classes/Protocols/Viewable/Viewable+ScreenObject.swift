@@ -7,6 +7,7 @@
 
 import UIKit
 
+@MainActor
 public extension Viewable where Self: Screen {
     func element(withIdentifier identifier: String) -> UIView? {
         return self.viewTester.view(withIdentifier: identifier)
