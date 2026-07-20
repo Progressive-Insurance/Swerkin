@@ -78,6 +78,36 @@ public extension Steps {
             print("========================")
         }
     }
+
+    func topController() -> UIViewController? {
+        guard let keyWindow = UIApplication.shared.connectedSceneActiveWindow else {
+            return nil
+        }
+        if let root = keyWindow.rootViewController as? UINavigationController {
+            if let topController = root.visibleViewController,
+               topController as? UIAlertController == nil {
+                return topController
+            }
+            if let topController = root.topViewController {
+                return topController
+            }
+            return nil
+        } else {
+            return nil
+        }
+    }
+}
+
+public extension UIApplication {
+    fileprivate var connectedSceneActiveWindow: UIWindow? {
+        return self.connectedScenes
+        // Keep only active scenes, onscreen and visible to the user
+            .first(where: { $0 is UIWindowScene })
+        // Get its associated windows
+            .flatMap({ $0 as? UIWindowScene })?.windows
+        // Finally, keep only the key window
+            .first(where: \.isKeyWindow)
+    }
 }
 
 // MARK: - SwiftUI-aware accessibility traversal
