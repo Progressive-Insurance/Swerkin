@@ -22,13 +22,18 @@ let package = Package(
         .target(
             name: "SwerkinAdditions",
             dependencies: [],
-            path: "Sources/SwerkinAdditions",
-            publicHeadersPath: "public"
+            path: "Sources",
+            exclude: ["Swerkin", "../Example"],
+            publicHeadersPath: ".",
+            cSettings: [
+                    .headerSearchPath(".")
+                ]
             ),
         .target(
             name: "Swerkin",
             dependencies: ["KIF","SwerkinAdditions"],
-            path: "Sources/Swerkin")
+            path: "Sources",
+            exclude: ["SwerkinAdditions", "../Example"])
     ],
     swiftLanguageVersions: [.v5]
 )
