@@ -25,9 +25,9 @@ jobs:
     - name: Show Build SDK
       run: xcodebuild -showsdks
     
-    - name: Install Dependencies
+    - name: Resolve Swift packages
       working-directory: Example
-      run: pod install --repo-update
+      run: xcodebuild -resolvePackageDependencies -workspace Swerkin.xcworkspace -scheme Swerkin_Example
    
     - name: Show Build Workspace
       working-directory: Example

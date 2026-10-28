@@ -3,18 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		302C32D7835A7FA813DE9107 /* Pods_Swerkin_UnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924536DBBD014F2CF821C2BF /* Pods_Swerkin_UnitTests.framework */; };
-		3CF48F1DA6F7781082BBC6F8 /* Pods_Swerkin_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233A35408ACB55C97FDBCB8C /* Pods_Swerkin_UITests.framework */; };
+		A04020010000000000000001 /* Swerkin in Frameworks */ = {isa = PBXBuildFile; productRef = A04020010000000000000003 /* Swerkin */; };
+		A04020010000000000000002 /* Swerkin in Frameworks */ = {isa = PBXBuildFile; productRef = A04020010000000000000004 /* Swerkin */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		721CF99529A928AE0013AAAB /* Pods_Swerkin_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3680A5E93CB4E567FFE176 /* Pods_Swerkin_Example.framework */; };
 		72277795277E1D99005E6EB6 /* DropdownScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72277794277E1D99005E6EB6 /* DropdownScreen.swift */; };
 		7227779727834C47005E6EB6 /* DropdownSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7227779627834C47005E6EB6 /* DropdownSpec.swift */; };
 		722777992788A642005E6EB6 /* TappableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722777982788A641005E6EB6 /* TappableViewController.swift */; };
@@ -66,10 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B09622D86034A7D7AC519DD /* Swerkin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Swerkin.podspec; path = ../Swerkin.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		233A35408ACB55C97FDBCB8C /* Pods_Swerkin_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swerkin_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E85B6C88EDD7DFF231BA9C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		49801E0E631A048CB99D85E8 /* Pods-Swerkin-UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swerkin-UITests.release.xcconfig"; path = "Target Support Files/Pods-Swerkin-UITests/Pods-Swerkin-UITests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Swerkin_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swerkin_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,13 +95,6 @@
 		72D68AE5299FCCC100611384 /* TableViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSpec.swift; sourceTree = "<group>"; };
 		72E66883278DC93B00575410 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		72E66885278E6C8A00575410 /* PopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
-		83E9178238A02EE3E59312C6 /* Pods-Swerkin-UnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swerkin-UnitTests.debug.xcconfig"; path = "Target Support Files/Pods-Swerkin-UnitTests/Pods-Swerkin-UnitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		924536DBBD014F2CF821C2BF /* Pods_Swerkin_UnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swerkin_UnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3F084A76666E666CD61FD9A /* Pods-Swerkin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swerkin_Example.debug.xcconfig"; path = "Target Support Files/Pods-Swerkin_Example/Pods-Swerkin_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BAE6510D3E67D5B9C335D4E5 /* Pods-Swerkin-UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swerkin-UITests.debug.xcconfig"; path = "Target Support Files/Pods-Swerkin-UITests/Pods-Swerkin-UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BE6903AC37F217FC9A9CF7B6 /* Pods-Swerkin-UnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swerkin-UnitTests.release.xcconfig"; path = "Target Support Files/Pods-Swerkin-UnitTests/Pods-Swerkin-UnitTests.release.xcconfig"; sourceTree = "<group>"; };
-		CF3680A5E93CB4E567FFE176 /* Pods_Swerkin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swerkin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAA19B2297627404B62A8787 /* Pods-Swerkin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swerkin_Example.release.xcconfig"; path = "Target Support Files/Pods-Swerkin_Example/Pods-Swerkin_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EB4F685F24F9787100C1F4D6 /* Swerkin-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swerkin-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4F686124F9787100C1F4D6 /* TestTagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTagTests.swift; sourceTree = "<group>"; };
 		EB4F686324F9787100C1F4D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -134,7 +123,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				721CF99529A928AE0013AAAB /* Pods_Swerkin_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				302C32D7835A7FA813DE9107 /* Pods_Swerkin_UnitTests.framework in Frameworks */,
+				A04020010000000000000001 /* Swerkin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,46 +138,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CF48F1DA6F7781082BBC6F8 /* Pods_Swerkin_UITests.framework in Frameworks */,
+				A04020010000000000000002 /* Swerkin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D574AD09B68451011DDBF65 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BAE6510D3E67D5B9C335D4E5 /* Pods-Swerkin-UITests.debug.xcconfig */,
-				49801E0E631A048CB99D85E8 /* Pods-Swerkin-UITests.release.xcconfig */,
-				83E9178238A02EE3E59312C6 /* Pods-Swerkin-UnitTests.debug.xcconfig */,
-				BE6903AC37F217FC9A9CF7B6 /* Pods-Swerkin-UnitTests.release.xcconfig */,
-				B3F084A76666E666CD61FD9A /* Pods-Swerkin_Example.debug.xcconfig */,
-				DAA19B2297627404B62A8787 /* Pods-Swerkin_Example.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		5714E102A3508A639AFADBC8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				233A35408ACB55C97FDBCB8C /* Pods_Swerkin_UITests.framework */,
-				924536DBBD014F2CF821C2BF /* Pods_Swerkin_UnitTests.framework */,
-				CF3680A5E93CB4E567FFE176 /* Pods_Swerkin_Example.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				607FACF51AFB993E008FA782 /* Package Metadata */,
 				607FACD21AFB9204008FA782 /* Example for Swerkin */,
 				607FACE81AFB9204008FA782 /* Swerkin-UITests-Examples */,
 				EB4F686024F9787100C1F4D6 /* Swerkin-UnitTests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				0D574AD09B68451011DDBF65 /* Pods */,
-				5714E102A3508A639AFADBC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -248,14 +211,13 @@
 			path = "Swerkin-UITests-Examples";
 			sourceTree = "<group>";
 		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+		607FACF51AFB993E008FA782 /* Package Metadata */ = {
 			isa = PBXGroup;
 			children = (
 				729AE9FB2D306D5800299A68 /* LICENSE.md */,
-				1B09622D86034A7D7AC519DD /* Swerkin.podspec */,
 				28E85B6C88EDD7DFF231BA9C /* README.md */,
 			);
-			name = "Podspec Metadata";
+			name = "Package Metadata";
 			sourceTree = "<group>";
 		};
 		727175CA277A156D00D017CF /* views */ = {
@@ -336,7 +298,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Swerkin_Example" */;
 			buildPhases = (
-				5C6EE4FED3728FAEB0D108E3 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
@@ -354,17 +315,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB4F686824F9787100C1F4D6 /* Build configuration list for PBXNativeTarget "Swerkin-UnitTests" */;
 			buildPhases = (
-				C473A9810676307E71D6211B /* [CP] Check Pods Manifest.lock */,
 				EB4F685B24F9787100C1F4D6 /* Sources */,
 				EB4F685C24F9787100C1F4D6 /* Frameworks */,
 				EB4F685D24F9787100C1F4D6 /* Resources */,
-				B89742C3C37326C392F0935E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Swerkin-UnitTests";
+			packageProductDependencies = (
+				A04020010000000000000003 /* Swerkin */,
+			);
 			productName = Swerkin_ExampleTests;
 			productReference = EB4F685F24F9787100C1F4D6 /* Swerkin-UnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -373,11 +335,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBBF66FB2757FA2300CE7314 /* Build configuration list for PBXNativeTarget "Swerkin-UITests" */;
 			buildPhases = (
-				B26E01D64F07EDD68467EE01 /* [CP] Check Pods Manifest.lock */,
 				EBBF66F52757FA2300CE7314 /* Sources */,
 				EBBF66F72757FA2300CE7314 /* Frameworks */,
 				EBBF66F92757FA2300CE7314 /* Resources */,
-				707634C5454CF8304895421F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -385,6 +345,9 @@
 				EBBF66F22757FA2300CE7314 /* PBXTargetDependency */,
 			);
 			name = "Swerkin-UITests";
+			packageProductDependencies = (
+				A04020010000000000000004 /* Swerkin */,
+			);
 			productName = Swerkin_ExampleTests;
 			productReference = EBBF66FE2757FA2300CE7314 /* Swerkin-UITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -423,6 +386,9 @@
 				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
+			packageReferences = (
+				A04020010000000000000005 /* XCLocalSwiftPackageReference ".." */,
+			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -461,115 +427,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5C6EE4FED3728FAEB0D108E3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Swerkin_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		707634C5454CF8304895421F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Swerkin-UITests/Pods-Swerkin-UITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KIF/KIF.framework",
-				"${BUILT_PRODUCTS_DIR}/Swerkin/Swerkin.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swerkin.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swerkin-UITests/Pods-Swerkin-UITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B26E01D64F07EDD68467EE01 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Swerkin-UITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B89742C3C37326C392F0935E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Swerkin-UnitTests/Pods-Swerkin-UnitTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KIF/KIF.framework",
-				"${BUILT_PRODUCTS_DIR}/Swerkin/Swerkin.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swerkin.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swerkin-UnitTests/Pods-Swerkin-UnitTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C473A9810676307E71D6211B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Swerkin-UnitTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		607FACCC1AFB9204008FA782 /* Sources */ = {
@@ -775,7 +632,6 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3F084A76666E666CD61FD9A /* Pods-Swerkin_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 75R8QKK66M;
@@ -805,7 +661,6 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAA19B2297627404B62A8787 /* Pods-Swerkin_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 75R8QKK66M;
@@ -835,7 +690,6 @@
 		};
 		EB4F686624F9787100C1F4D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83E9178238A02EE3E59312C6 /* Pods-Swerkin-UnitTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -863,7 +717,6 @@
 		};
 		EB4F686724F9787100C1F4D6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE6903AC37F217FC9A9CF7B6 /* Pods-Swerkin-UnitTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -888,7 +741,6 @@
 		};
 		EBBF66FC2757FA2300CE7314 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAE6510D3E67D5B9C335D4E5 /* Pods-Swerkin-UITests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -920,7 +772,6 @@
 		};
 		EBBF66FD2757FA2300CE7314 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49801E0E631A048CB99D85E8 /* Pods-Swerkin-UITests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -986,6 +837,24 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A04020010000000000000005 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A04020010000000000000003 /* Swerkin */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Swerkin;
+		};
+		A04020010000000000000004 /* Swerkin */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Swerkin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }
