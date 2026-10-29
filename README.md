@@ -155,21 +155,17 @@ __ScreenRenderer__ is a protocol for creating a screen from the system under tes
 
 # Installation
 
-Swerkin is available through [CocoaPods](https://cocoapods.org).
+Swerkin uses [Swift Package Manager](https://www.swift.org/documentation/package-manager/)
+and requires Xcode 15 or later (Swift tools 5.9) and iOS 15 or later.
 
-To install it, simply add the following to your Podfile:
+In Xcode, select **File > Add Package Dependencies** and enter
+`https://github.com/Progressive-Insurance/Swerkin.git`. Select the desired revision,
+then add the **Swerkin** library product to your test target, not your application
+target.
 
-```
-target 'Your Apps' do
-  ...
-end
-
-target 'Acceptance Tests' do
-  pod 'Swerkin'
-end
-```
-
-After adding, Run pod install to complete 
+Swift Package Manager automatically resolves KIF at version **4.0.2**, including
+its accessibility identifier testing APIs. No separate KIF dependency or CocoaPods
+installation is needed.
 
 # Implementation
 
@@ -395,7 +391,17 @@ func testVerifyExistenceOfFirstNameTextFieldWithLabel() {
 ```
 
 ### How to Run Example App & UI Tests
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo and open
+`Example/Swerkin.xcworkspace` in Xcode. Both test targets use the local Swerkin
+package, and Xcode resolves KIF automatically. The example targets require iOS
+17.6 or later.
 
 Select CMD-U Swerkin_Example scheme to execute the tests.
 
+### Releases
+
+Releases are managed manually. After verifying the release commit, create and
+push a semantic version Git tag (`X.Y.Z`), then publish the GitHub release for
+that tag. Swift Package Manager discovers package versions from the pushed tags;
+a GitHub release is optional for package resolution. Fastlane is used only for
+building and testing, not versioning, tagging, or publishing releases.

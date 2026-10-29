@@ -107,29 +107,4 @@ platform :ios do
     )
   end
 
-  desc "Release a new version with a patch bump_type"
-  lane :patch do
-    release("patch") 
-  end
-
-  desc "Release a new version with a minor bump_type"
-  lane :minor do
-    release("minor")
-  end
-
-  desc "Release a new version with a major bump_type"
-  lane :major do
-    release("major")
-  end
-
-  def release(type)
-    podspec_path = "./../Swerkin.podspec"
-    version = version_bump_podspec(path: podspec_path,
-                                  bump_type: type)
-    git_add(path: podspec_path)
-    git_commit(path: [podspec_path],
-              message: "#{version} release")
-    add_git_tag(tag: "#{version}")
-    push_to_git_remote
-  end
 end

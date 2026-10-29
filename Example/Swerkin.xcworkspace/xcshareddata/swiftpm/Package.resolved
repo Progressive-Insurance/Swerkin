@@ -1,0 +1,15 @@
+{
+  "originHash" : "79c0898d88efcb00bd66965feacbed43640f98b77626bea16c4a0baec705eff4",
+  "pins" : [
+    {
+      "identity" : "kif",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kif-framework/KIF.git",
+      "state" : {
+        "revision" : "c4be1300c3a6d75823fefa0472814a8f28429438",
+        "version" : "4.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}
